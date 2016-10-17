@@ -1,0 +1,40 @@
+/**
+ * Admin menu icon CSS example
+ */
+
+/* Admin Menu – normal */
+#menu-posts-ptd_movie .wp-menu-image {
+    background: url(../images/icon-movie-sprite.png) no-repeat 0 0;
+}
+/* Admin Menu – hover/active */
+#menu-posts-ptd_movie:hover .wp-menu-image, 
+#menu-posts-ptd_movie.wp-has-current-submenu .wp-menu-image {
+    background-position: 6px -26px;
+}
+/* Post Screen */
+.icon32-posts-ptd_movie {
+    background: url(../images/icon-movie-sprite.png) no-repeat 0 0;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (   min--moz-device-pixel-ratio: 1.5),
+only screen and (     -o-min-device-pixel-ratio: 3/2),
+only screen and (        min-device-pixel-ratio: 1.5),
+only screen and (                min-resolution: 1.5dppx) {
+     
+	/* Admin Menu */
+	#menu-posts-ptd_movie .wp-menu-image {
+		background-image: url('../images/icon-movie-sprite_2x.png');
+		-webkit-background-size: 16px 48px;
+		-moz-background-size: 16px 48px;
+		background-size: 16px 48px;
+	}
+	/* Post Screen */
+	.icon32-posts-ptd_movie {
+		background-image: url('../images/icon-movie-sprite_2x.png');
+		-webkit-background-size: 32px 32px;
+		-moz-background-size: 32px 32px;
+		background-size: 32px 32px;
+	}         
+}

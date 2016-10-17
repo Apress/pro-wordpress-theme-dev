@@ -1,0 +1,17 @@
+/**
+ * Adding custom logo to login page
+ */
+
+.login h1 a {
+	background-image: url('../images/wordpress-logo.png?ver=20120216');
+	background-size: 274px 63px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	width: 326px;
+	height: 67px;
+	text-indent: -9999px;
+	outline: 0;
+	overflow: hidden;
+	padding-bottom: 15px;
+	display: block;
+}

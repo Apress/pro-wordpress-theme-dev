@@ -1,0 +1,17 @@
+/**
+ * Child theme header example
+ */
+
+/*
+Theme Name: Adam’s Twenty Thirteen Child
+Theme URI: http://wp-themes-book.com/twentythirteen-child
+Author: Adam Onishi
+Author URI: http://adamonishi.com
+Template: twentythirteen
+Text Domain: twentythirteen-child
+*/
+
+
+/* Import styles from the parent theme
+-------------------------------------------------------------- */
+@import url('../twentythirteen/style.css');

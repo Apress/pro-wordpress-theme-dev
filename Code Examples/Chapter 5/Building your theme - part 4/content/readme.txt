@@ -1,0 +1,1 @@
+These two new content files hold mostly the same content as the previous chapter, just with the added custom fields and taxonomies. To import the new content successfully, you must first delete the content from the previous chapter.

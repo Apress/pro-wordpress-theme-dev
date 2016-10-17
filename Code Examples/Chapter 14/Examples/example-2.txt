@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+	DocumentRoot "/Users/adamonishi/Sites/multi-12devs.dev"
+	ServerName multi12devs.dev
+</VirtualHost>
+
+<VirtualHost *:80>
+	DocumentRoot "/Users/adamonishi/Sites/multi-12devs.dev"
+	ServerName multiofxmas.dev
+</VirtualHost>

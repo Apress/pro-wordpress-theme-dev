@@ -1,0 +1,18 @@
+# Prevent script injections (in .htaccess)
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+RewriteRule ^(.*)$ index.php [F,L]
+
+
+# Prevent hotlinking
+
+RewriteEngine On
+#Replace ?website\.com/ with your site url
+RewriteCond %{HTTP_REFERRER} !^http://(.+\.)?website\.com/ [NC]
+RewriteCond %{HTTP_REFERRER} !^$
+#Replace image with your "stealing is bad" image url
+RewriteRule .*\.(jpe?g|gif|bmp|png)$ /images/stealingisbad.gif [L]
